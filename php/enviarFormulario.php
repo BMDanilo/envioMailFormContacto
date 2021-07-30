@@ -1,22 +1,6 @@
 <?php
-// Allow from any origin
-if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-  header('Access-Control-Allow-Origin: *');
-  header('Access-Control-Allow-Methods: POST, GET, DELETE, PUT, PATCH, OPTIONS');
-  header('Access-Control-Allow-Headers: token, Content-Type');
-  header('Access-Control-Max-Age: 1728000');
-  header('Content-Length: 0');
-  header('Content-Type: text/plain');
-  die();
-}
-
 header('Access-Control-Allow-Origin: *');
-header('Content-Type: application/json');
 
-$ret = [
-  'result' => 'OK',
-];
-print json_encode($ret);
         if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])){
           // Recibir vía POST los datos del formulario
           $firstname = $_POST["first-name"];
