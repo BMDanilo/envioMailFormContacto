@@ -146,7 +146,6 @@
         });
 
         function enviar_correo() {
-            alert("a");
             var correo = new FormData();
 
             correo.append("name", document.getElementById("first-name").value);
@@ -154,7 +153,6 @@
             correo.append("email", document.getElementById("email").value);
             correo.append("phone", document.getElementById("phone").value);
             correo.append("mensaje", document.getElementById("message").value);
-            alert(correo);
             $.ajax({
                 url: "enviarFormulario.php",
                 type: "POST",
@@ -168,7 +166,6 @@
                     alert(msj.mensaje);
                 }
             });
-            alert("b");
         }
     </script>
     <!--===============================================================================================-->
