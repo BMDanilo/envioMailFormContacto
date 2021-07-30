@@ -1,6 +1,6 @@
 <?php
 // Allow from any origin
-header('Access-Control-Allow-Origin: https://bmdanilo.github.io');
+header('Access-Control-Allow-Origin: https://bmdanilo.github.io/envioMailFormContacto/');
 header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Max-Age:86400');
